@@ -46,6 +46,11 @@ function OnGameEvent_weapon_reload(params)
 	WeaponReload(params);
 }
 
+/*function OnGameEvent_molotov_thrown(params)
+{
+	MolotovThrown(params);
+}*/
+
 //Specials
 function OnGameEvent_ability_use(params)
 {

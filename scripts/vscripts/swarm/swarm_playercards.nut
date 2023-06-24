@@ -682,6 +682,29 @@ function SurvivorPickupItem(params)
 	}
 }
 
+/*function MolotovThrown(params)
+{
+	local player = GetPlayerFromUserID(params["userid"]);
+	local Alcoholic = PlayerHasCard(player, "Alcoholic");
+
+	if (Alcoholic > 0)
+	{
+		if (RandomInt(1, 100) <= Alcoholic * 500)
+		{
+			RefundItem(player, "molotov");
+		}
+	}
+}
+
+function RefundItem(player, item)
+{
+	local invTable = {};
+	GetInvTable(player, invTable);
+	printl(invTable.slot2)
+	invTable.slot2.Kill()
+	player.GiveItem(item)
+}*/
+
 function Update_PlayerCards()
 {
 	//Runs every second

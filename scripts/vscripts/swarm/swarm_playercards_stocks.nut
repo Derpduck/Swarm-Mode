@@ -50,6 +50,7 @@ brawnCards <-
 	"LastLegs",
 	"BuckshotBruiser",
 	"Lumberjack",
+	//"Alcoholic",
 ];
 
 disciplineCards <-
@@ -638,6 +639,9 @@ function GetPlayerCardName(cardID, type = "name")
 			case "Gambler":
 				return "Gambler";
 				break;
+			case "Alcoholic":
+				return "Alcoholic";
+				break;
 			default:
 				return cardID;
 				break;
@@ -876,7 +880,7 @@ function GetPlayerCardName(cardID, type = "name")
 				return "+15% chance of item on Mutation death";
 				break;
 			case "RefundPolicy":
-				return "+25% chance to not consume items";
+				return "+15% chance to not consume items";
 				break;
 			case "Stockpile":
 				return "Stockpile";
@@ -904,6 +908,10 @@ function GetPlayerCardName(cardID, type = "name")
 				break;
 			case "Gambler":
 				return "Randomize stats each map!"
+				break;
+			case "Alcoholic":
+				return "+50% chance to not consume Molotovs"
+				break;
 			default:
 				return cardID;
 				break;
